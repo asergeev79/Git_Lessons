@@ -14,3 +14,9 @@
 git config --global user.email "your@email"
 git config --global user.name "Your Name"
 ```
+
+## 4. Инициализация репозитория.
+Для создания репозитория необходимо выполнить в терминале команду:
+```
+git init
+```
