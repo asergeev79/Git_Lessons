@@ -259,5 +259,14 @@ git checkout -b <new-branch>
 ```
 git branch -d <branch>
 ```
-
+В этом случае возможна ошибка, если не было проведено слияние веток:
+```
+$ git branch -d delete-branch
+error: The branch 'delete-branch' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D delete-branch'.
+```
+Если необходимо удалить ветку в любом случае, тогда параметр будет таким:
+```
+git branch -D <branch>
+```
 
