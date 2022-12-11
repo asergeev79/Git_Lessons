@@ -297,3 +297,25 @@ git checkout <целевая ветка>
 и объединяем ветку, которую хотим:
 ```
 git merge <branch>
+```
+### 9.5. Разрешение конфликтов
+В случае работы над одними файлами в разных ветках есть вероятность того, что при слиянии выйдет ошибка:
+```
+$ git merge checkout-branch
+error: Your local changes to the following files would be overwritten by merge:
+        Git_Instruction.md
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+```
+либо
+```
+$ git merge checkout-branch
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+```
+а в среде разработки (в данном случае Visual Code) предлагается исправить конфликт:
+![confilct](conflict.png)
+В этом случае необходимо сделать выбор.
