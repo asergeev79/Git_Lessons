@@ -254,5 +254,10 @@ git checkout <new-branch>
 ```
 git checkout -b <new-branch>
 ```
+### 9.2. Удаление веток
+Для удаления ветки надо выполнить команду в терминале:
+```
+git branch -d <branch>
+```
 
 
